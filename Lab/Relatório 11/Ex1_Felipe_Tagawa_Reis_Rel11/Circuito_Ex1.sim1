@@ -1,0 +1,19 @@
+<circuit version="" rev="2220" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="SerialTerm" CircId="SerialTerm-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-132,-132" rotation="0" hflip="-1" vflip="1" label="SerialTerm-1" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Baudrate="9600 _Bauds" DataBits="8 _Bits" StopBits="1 _Bits" SerialMon="false" />
+
+<item itemtype="MCU" CircId="mega328-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-64,-156" rotation="0" hflip="1" vflip="1" label="mega328-2" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../Micro/Lab/Relatório 11/Ex1_Felipe_Tagawa_Reis_Rel11/Ex1_Felipe_Tagawa_Reis_Rel11.ino.standard.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" SerialMon="-1" />
+
+<item itemtype="Push" CircId="Push-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-132,-76" rotation="0" hflip="1" vflip="1" label="Push-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Ground" CircId="Ground-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-160,-40" rotation="0" hflip="1" vflip="1" label="Ground-4" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="SerialTerm-1-pin0" endpinid="mega328-2-PORTD0" pointList="-108,-140,-72,-140" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="SerialTerm-1-pin1" endpinid="mega328-2-PORTD1" pointList="-108,-124,-108,-132,-72,-132" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="mega328-2-PORTD4" endpinid="Push-3-switch0pinN" pointList="-72,-108,-104,-108,-104,-76,-116,-76" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Ground-4-Gnd" endpinid="Push-3-pinP0" pointList="-160,-56,-160,-76,-148,-76" />
+
+</circuit>
